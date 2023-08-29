@@ -32,6 +32,9 @@
 - Build Secondary Container Component
 - Build Movies List for, Now Playing Movies, Popular Movies, Top Rated Movies, UpComing Movies using TMDB API
 - Created Custom Hooks for, Now Playing Movies, Popular Movies, TopRated Movies, UpComing Movies
+- GPT Search Page
+- GPT Search Bar
+- Multi Language Feature on GPT Page
 
 # Features
 
