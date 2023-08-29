@@ -30,6 +30,8 @@
 - Embedded the YouTube Video and made it autoplay & mute
 - Tailwind Classes to make Main Container look awesome
 - Build Secondary Container Component
+- Build Movies List for, Now Playing Movies, Popular Movies, Top Rated Movies, UpComing Movies using TMDB API
+- Created Custom Hooks for, Now Playing Movies, Popular Movies, TopRated Movies, UpComing Movies
 
 # Features
 
