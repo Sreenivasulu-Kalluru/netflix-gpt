@@ -61,23 +61,23 @@ const Header = () => {
   };
 
   return (
-    <div className="absolute z-10 flex items-center justify-between w-full px-8 py-2 bg-gradient-to-b from-black">
-      <img className="w-44" src={LOGO} alt="Netflix Logo" />
-
-      <button
-        onClick={handleGptSearchClick}
-        className="px-8 py-2 mx-4 text-white bg-purple-800 font-medium rounded-md hover:bg-purple-600 transition-all duration-[.2s]"
-      >
-        {showGptSearch ? '🏠 HomePage' : 'GPT Search 🔎'}
-      </button>
+    <div className="absolute z-10 flex flex-col md:flex-row items-center justify-between w-full px-8 py-2 bg-gradient-to-b from-black">
+      <img className="w-44 mx-auto md:mx-0" src={LOGO} alt="Netflix Logo" />
 
       {user && (
         <>
+          <button
+            onClick={handleGptSearchClick}
+            className="px-8 py-2 mx-4 text-white bg-purple-800 font-medium rounded-md hover:bg-purple-600 transition-all duration-[.2s]"
+          >
+            {showGptSearch ? '🏠 HomePage' : 'GPT Search 🔎'}
+          </button>
+
           <div>
             <div className="flex items-center p-2">
               {showGptSearch && (
                 <select
-                  className="p-2 m-2 text-white bg-gray-900"
+                  className="p-2 m-2 hidden md:block text-white bg-gray-900"
                   onChange={handleLanguageChange}
                 >
                   {SUPPORTED_LANGUAGES.map((lang) => (
@@ -88,7 +88,7 @@ const Header = () => {
                 </select>
               )}
               <img
-                className="w-12 h-12 rounded-full shadow-md"
+                className="w-12 h-12 rounded-full shadow-md m-2 hidden md:block"
                 src={user?.photoURL}
                 alt="user icon"
               />
