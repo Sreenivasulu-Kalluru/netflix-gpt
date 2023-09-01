@@ -24,7 +24,7 @@ const GptSearchBar = () => {
   };
 
   const handleGptSearchClick = async () => {
-    console.log(searchText.current.value);
+    // console.log(searchText.current.value);
     // * Make an API call to GPT API and get movie results
 
     const gptQuery =
@@ -59,7 +59,7 @@ const GptSearchBar = () => {
   return (
     <div className="pt-[10%] max-sm:pt-[50%] flex justify-center">
       <form
-        className="grid w-full max-sm:mx-4 md:w-1/2 grid-cols-12 bg-black rounded-md"
+        className="grid w-full grid-cols-12 bg-black rounded-md max-sm:mx-4 md:w-1/2"
         onSubmit={(e) => e.preventDefault()}
       >
         <input
